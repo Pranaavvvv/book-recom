@@ -123,7 +123,7 @@ class BookRecommender:
 def load_data():
     try:
         # Read CSV with error handling for rows with mismatched columns
-        data = pd.read_csv("books.csv", on_bad_lines='skip')  # Skip bad lines
+        data = pd.read_csv("books_data/books.csv", on_bad_lines='skip')  # Skip bad lines
         # Clean the data
         data['title'] = data['title'].str.strip()  # Ensure 'title' column exists
         data['authors'] = data['authors'].str.strip()  # Ensure 'authors' column exists

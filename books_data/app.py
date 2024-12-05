@@ -196,7 +196,7 @@ def main():
                 """, unsafe_allow_html=True)
 
                 # Create three columns for metrics
-                col1, col3 = st.columns(3)
+                col1, col2 = st.columns(2)
 
                 with col1:
                     st.markdown(f"""
@@ -206,13 +206,14 @@ def main():
                     </div>
                     """, unsafe_allow_html=True)
 
-                with col3:
+                with col2:
                     st.markdown(f"""
                     <div class="metric-card">
                         <h4>Reviews</h4>
                         <h2>📊 {book['ratings_count']:,}</h2>
                     </div>
                     """, unsafe_allow_html=True)
+                   
 
         # Visualization section
         st.subheader("📊 Visualization")
